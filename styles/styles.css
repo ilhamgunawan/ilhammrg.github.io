@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */
+}
+
+body {
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  background-color: #15181b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+main {
+  width: 280px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.link-logo {
+  text-decoration: none;
+}
+
+.link-logo:hover .logo-github {
+  fill: #fff;
+}
+
+.link-logo:hover .logo-linkedin {
+  fill: #0077b5;
+}
+
+.link-logo:hover .svg-linkedin {
+  background-color: #fff;
+}
+
+.link-logo:hover .logo-twitter {
+  fill: #55acee;
+}
+
+.link-logo:hover .logo-blog {
+  fill: #c0392b;
+}
+ 
+.link-logo svg {
+  height: 50px;
+  width: 50px;
+  transition: 0.5s;
+}
+
+.link-logo .svg-linkedin {
+  border-radius: 8px;
+}
+
+.link-logo svg path {
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  main {
+    width: 350px;
+  }
+
+  .link-logo svg {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
