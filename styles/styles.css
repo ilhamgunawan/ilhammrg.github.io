@@ -57,7 +57,7 @@ main {
 }
 
 .link-logo:hover .logo-blog {
-  fill: #c0392b;
+  fill: rgb(52, 211, 153);
 }
  
 .link-logo svg {
